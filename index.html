@@ -1,0 +1,116 @@
+<html>
+<head>
+    <title>BMW</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <div class="logo">///M POWER</div>
+        <nav>
+            <a href="#m4">M4 Coupe</a>
+            <a href="#catalog">Каталог</a>
+            <a href="#m5">M5 Sedan</a>
+        </nav>
+    </header>
+
+    <section id="m4" class="hero section-orange">
+        <div class="container">
+            <div class="text-content">
+                <h1>THE M4</h1>
+                <h2>COMPETITION COUPE</h2>
+                <p>Абсолютна динаміка та адреналін. Створений для тих, хто не визнає компромісів на дорозі.</p>
+                
+                <div class="specs">
+                    <div><strong>510 к.с.</strong>Потужність</div>
+                    <div><strong>300 км/год</strong>Макс. швидкість</div>
+                    <div><strong>3.1 сек</strong>0-100 км/год</div>
+                </div>
+
+                <div class="buttons">
+                    <button class="btn btn-white" onclick="alert('Менеджер зв’яжеться з вами!')">Консультація</button>
+                    <button class="btn btn-transparent" onclick="document.getElementById('catalog').scrollIntoView()">Конфігуратор</button>
+                </div>
+            </div>
+            
+            <div class="image-content">
+                <img src="https://i.pinimg.com/736x/06/8e/29/068e2943ea9de27d6e63c307d318f6ff.jpg" alt="BMW M4">
+            </div>
+        </div>
+    </section>
+<section id="catalog" class="catalog">
+        <div class="container">
+            <h3>Обрати свою комплектацію</h3>
+            
+            <div class="cards-grid">
+                <div class="card">
+                    <div class="card-image-wrapper">
+                        <img src="https://i.pinimg.com/1200x/50/ed/18/50ed18dd66688168c9eb4f36288649d4.jpg" alt="M4 RWD">
+                    </div>
+                    <h4>M4 RWD COUPE</h4>
+                    <p class="price">від 5 500 000 ₴</p>
+                    <button class="btn btn-small" onclick="selectCar(this)">Вибрати</button>
+                    <ul class="features">
+                        <li>Задній привід</li>
+                        <li>Панорамний дах Sky Lounge</li>
+                        <li>Вентиляція передніх сидінь</li>
+                    </ul>
+                </div>
+
+                <div class="card">
+                    <div class="card-image-wrapper">
+                        <img src="https://i.pinimg.com/736x/45/78/df/4578df1cf6c5dcf84901ba175c8066e7.jpg" alt="M4 Track">
+                    </div>
+                    <h4>M4 TRACK EDITION</h4>
+                    <p class="price">від 7 200 000 ₴</p>
+                    <button class="btn btn-small" onclick="selectCar(this)">Вибрати</button>
+                    <ul class="features">
+                        <li>Карбон-керамічні гальма</li>
+                        <li>Ковшеподібні сидіння</li>
+                        <li>Трековий пакет M Driver</li>
+                    </ul>
+                </div>
+
+                <div class="card">
+                    <div class="card-image-wrapper">
+                        <img src="https://i.pinimg.com/736x/73/d0/02/73d0025a4fc4b9d9ca69ca502031519c.jpg" alt="M4 Special">
+                    </div>
+                    <h4>M4 SPECIAL PRO</h4>
+                    <p class="price">від 8 400 000 ₴</p>
+                    <button class="btn btn-small" onclick="selectCar(this)">Вибрати</button>
+                    <ul class="features">
+                        <li>Повний привід xDrive</li>
+                        <li>Шкіра Merino + Alcantara</li>
+                        <li>Лазерні фари BMW Laserlight</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+<section id="m5" class="hero section-blue">
+        <div class="container">
+            <div class="text-content">
+                <h1>THE M5</h1>
+                <h2>COMPETITION SEDAN</h2>
+                <p>Еталон бізнес-класу зі спортивним характером. Ідеальне поєднання комфорту та потужності.</p>
+                
+                <div class="specs">
+                    <div><strong>625 к.с.</strong>Потужність</div>
+                    <div><strong>330 км/год</strong>Макс. швидкість</div>
+                    <div><strong>3.3 сек</strong>0-100 км/год</div>
+                </div>
+
+                <div class="buttons">
+                    <button class="btn btn-white" onclick="alert('Заявку на тест-драйв M5 відправлено!')">Тест-драйв</button>
+                    <button class="btn btn-transparent" onclick="document.getElementById('catalog').scrollIntoView()">Конфігуратор</button>
+                </div>
+            </div>
+            
+            <div class="image-content">
+                <img src="https://i.pinimg.com/736x/b2/e0/bc/b2e0bc7cd7b30b6e1f15bf87b785d947.jpg" alt="BMW M5">
+            </div>
+        </div>
+    </section>
+
+</body>
+</html>
