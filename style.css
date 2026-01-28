@@ -1,0 +1,262 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #111;
+    color: white;
+}
+
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    z-index: 2;
+}
+
+.btn {
+    padding: 12px 30px;
+    font-weight: 700;
+    cursor: pointer;
+    border: 2px solid white;
+    margin-right: 15px;
+    text-transform: uppercase;
+    font-size: 14px;
+    transition: all 0.3s ease;
+}
+
+.btn-white {
+    background-color: white;
+    color: black;
+}
+
+.btn-white:hover {
+    background-color: #ddd;
+    transform: translateY(-2px);
+}
+
+.btn-transparent {
+    background-color: transparent;
+    color: white;
+}
+
+.btn-transparent:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    transform: translateY(-2px);
+}
+
+.btn-small {
+    width: 100%;
+    background-color: transparent;
+    border: 1px solid #333;
+    color: #333;
+    margin: 15px 0;
+    padding: 10px;
+}
+
+.btn-small:hover {
+    background-color: #000;
+    color: white;
+    border-color: #000;
+}
+
+.btn-small.active {
+    background-color: #28a745;
+    color: white;
+    border-color: #28a745;
+}
+
+header {
+    background-color: black;
+    padding: 20px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    border-bottom: 1px solid #333;
+}
+
+.logo {
+    font-weight: 900;
+    font-size: 24px;
+    letter-spacing: 2px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 20px;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: 700;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #ff5e00;
+}
+
+.icons {
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.hero {
+    min-height: 650px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.section-orange {
+    background: linear-gradient(115deg, #ff5e00 45%, #1a1a1a 45%);
+}
+
+.section-blue {
+    background: linear-gradient(115deg, #1565C0 45%, #1a1a1a 45%);
+}
+
+.text-content {
+    width: 45%;
+}
+
+.hero h1 {
+    font-size: 100px;
+    line-height: 0.9;
+    font-weight: 900;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.hero h2 {
+    font-size: 24px;
+    margin-bottom: 25px;
+    letter-spacing: 3px;
+    font-weight: 400;
+}
+
+.hero p {
+    max-width: 400px;
+    margin-bottom: 35px;
+    font-size: 14px;
+    line-height: 1.6;
+    opacity: 0.9;
+}
+
+.specs {
+    display: flex;
+    gap: 40px;
+    margin-bottom: 40px;
+    border-top: 1px solid rgba(255, 255, 255, 0.3);
+    padding-top: 25px;
+}
+
+.specs div strong {
+    font-size: 24px;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.specs div {
+    font-size: 12px;
+    text-transform: uppercase;
+    opacity: 0.8;
+}
+
+.image-content {
+    width: 50%;
+}
+
+.image-content img {
+    width: 100%;
+    max-width: 700px;
+    display: block;
+    filter: drop-shadow(0px 20px 30px rgba(0, 0, 0, 0.5));
+}
+
+.catalog {
+    background-color: #f4f4f4;
+    padding: 80px 0;
+    color: black;
+}
+
+.catalog h3 {
+    text-transform: uppercase;
+    margin-bottom: 40px;
+    font-size: 32px;
+    text-align: left;
+}
+
+.catalog .container {
+    display: block;
+}
+
+.cards-grid {
+    display: flex;
+    gap: 30px;
+    justify-content: space-between;
+}
+.card {
+    background-color: white;
+    color: black;
+    width: 32%;
+    padding: 25px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
+
+.card-image-wrapper {
+    width: 100%;
+    height: 200px;
+    margin-bottom: 20px;
+    overflow: hidden;
+    border-radius: 5px;
+}
+
+.card-image-wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.card h4 {
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+.card .price {
+    font-size: 20px;
+    font-weight: 900;
+    color: #1565C0;
+    margin: 10px 0;
+}
+
+.features {
+    text-align: left;
+    font-size: 13px;
+    color: #666;
+    padding-left: 20px;
+    margin-top: 20px;
+    line-height: 1.6;
+}
